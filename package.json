@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config-jordansimsmith",
+  "version": "1.0.0",
+  "description": "My personal ESLint configuration",
+  "main": "index.js",
+  "repository": "git@github.com:jordansimsmith/eslint-config-jordansimsmith.git",
+  "author": "Jordan Sim-Smith <jordansimsmith@gmail.com>",
+  "license": "GNU General Public License v3.0",
+  "private": false
+}
