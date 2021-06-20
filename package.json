@@ -6,5 +6,8 @@
   "repository": "git@github.com:jordansimsmith/eslint-config-jordansimsmith.git",
   "author": "Jordan Sim-Smith <jordansimsmith@gmail.com>",
   "license": "GNU General Public License v3.0",
-  "private": false
+  "private": false,
+  "peerDependencies": {
+    "eslint": "^7.29.0"
+  }
 }
