@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jordansimsmith",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My personal ESLint configuration",
   "main": "index.js",
   "repository": "git@github.com:jordansimsmith/eslint-config-jordansimsmith.git",
