@@ -7,16 +7,21 @@
   "author": "Jordan Sim-Smith <jordansimsmith@gmail.com>",
   "license": "GNU General Public License v3.0",
   "private": false,
-  "devDependencies": {
+  "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
-    "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.2.0"
   }
 }
