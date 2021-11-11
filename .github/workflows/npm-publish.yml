@@ -12,6 +12,11 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v2
 
+      - name: Setup git
+        run: |
+          git config --global user.email "jordansimsmith@gmail.com"
+          git config --global user.name "Jordan Sim-Smith"
+
       - name: Setup node
         uses: actions/setup-node@v2
         with:
@@ -21,10 +26,14 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Bump version
+        run: npm version patch -m "[CI] Bump package version"
+
       - name: Publish package
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-
+      - name: Push version bump
+        run: git push https://${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
 
